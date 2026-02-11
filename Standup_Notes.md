@@ -25,7 +25,7 @@ Blockers?: Getting PyCharm & PyGame working
 
 Bugs filed today: 1 Issue Filed. Low Severity
 
-
+## 
 Wednesday
 Date: _2/11/2026_
 
