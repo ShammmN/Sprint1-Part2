@@ -31,26 +31,28 @@ Date: _2/11/2026_
 
 ### Alex
 What I tested: Fish Game - Marcus C's Game
-What I'm testing next:
+What I'm testing next: Christofer - Rise - Of - Mark - Ham
 Blockers? NONE
 Test Lead Notes:
 
 ### Sham
 What I tested: Fish Game - Marcus C's Game
-What I'm testing next:
+What I'm testing next: Christofer - Rise - Of - Mark - Ham
 Blockers? NONE
 
 ### Elizabeth
 What I tested: BlackJack
-What I'm testing next:
+What I'm testing next: Echo of Terminal 7
 Blockers? NONE
 
 ### Melo
 What I tested: BlackJack
-What I'm testing next: 
+What I'm testing next: Echo of Terminal 7
 Blockers? NONE
 
 Bugs filed today:
+Fishing Game: 2 Issues Filed, Severity Levels vary on Issues
+BlackJack: 3 Issues Filed, Severity Levels vary on Issues
 
 
 ##
