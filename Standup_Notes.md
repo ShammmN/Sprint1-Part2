@@ -41,13 +41,13 @@ What I'm testing next:
 Blockers? NONE
 
 ### Elizabeth
-What I tested: Fish Game - Marcus C's Game
+What I tested: BlackJack
 What I'm testing next:
 Blockers? NONE
 
 ### Melo
-What I tested: Fish Game - Marcus C's Game
-What I'm testing next:
+What I tested: BlackJack
+What I'm testing next: 
 Blockers? NONE
 
 Bugs filed today:
