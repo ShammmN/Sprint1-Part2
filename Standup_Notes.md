@@ -33,7 +33,6 @@ Date: _2/11/2026_
 What I tested: Fish Game - Marcus C's Game
 What I'm testing next: Christofer - Rise - Of - Mark - Ham
 Blockers? NONE
-Test Lead Notes:
 
 ### Sham
 What I tested: Fish Game - Marcus C's Game
