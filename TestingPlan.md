@@ -209,7 +209,7 @@ Goal: What breaks the game? What unexpected inputs does it not handle?
 - [x] Look for off-by-one errors (1 too many, 1 too few)
 
 **Known issues found today:**
-1. Played 5 rounds without catching a fish and nothing happened
+1. None
 
 **Wednesday:** Final Pass & Handoff
 
