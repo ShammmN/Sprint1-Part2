@@ -129,10 +129,10 @@ No other issues were found, just those three.
 2. Can still win the game without even catching anything
 3. No starting game menu
 
-----------
+-----------------------------------------------------------
 
 
-# Game Being Tested: Echo of Terminal 7 - Surrounded Edition
+## Game Being Tested: Echo of Terminal 7 - Surrounded Edition
 
 Dev Team: Nayan Patel, Khani Lyan, Gauhar Veeravalli, Quint Bunting
 
@@ -172,30 +172,30 @@ You control a stranded scientist exploring a dying research station, moving betw
 **Tuesday:** Happy Path & Core Mechanics
 
 **Goal:** Does the game work as the dev team said it would?
-
-*hint it doesn't*
+- No. 
 
 ## Test Scenarios:
 
 - [x] Start the game cleanly (no crashes at launch)
-- [x] Follow the happy path (win the game normally)
+- [] Follow the happy path (win the game normally)
 - [x] Follow the lose path (lose the game)
-- [x] Core mechanic 1 works as described
-- [x] All UI/output is readable and clear
+- [] Core mechanic 1 works as described
+- [] All UI/output is readable and clear
 
 **Known issues found today:**
-1. Entire UI missing, there was supposed to be a starting game page
-2. Cannot upgrade even though it was supposed to be an option
+1. In the Power Grid Room the Green button doesn't work
+2. Text Boxes in the other mini game rooms are blacked out.
 
 **Wednesday:** Input Validation & Edge Cases
 Goal: What breaks the game? What unexpected inputs does it not handle?
+- So far the fact that the first puzzle (the power grid) doesn't work, this won't allow you to continue the game. The game handles inputs correctly.
 
 **Test Scenarios:**
-- [x] Try to break win/lose logic (can you get stuck?)
-- [x] State persistence (does the game track things correctly?)
+- [x] Try to break win/lose logic (can you get stuck?): **YES**
+- [x] State persistence (does the game track things correctly?) **YES**
 
 **Known issues found today:**
-1. Don't need to catch a fish in order to win the game and go to the next round
+1. You can solve 3 out of the 4 puzzles and still fight the boss in the end
     
 **Wednesday:** Complex Scenarios & State Management
 
@@ -256,6 +256,8 @@ No other issues were found, just those three.
 ## Testing Environment
 **Environment Used:**  
 - You play it through PyCharm using PyGame and it should be a window popup
+- macOS Tahoe 26.2 
+- pycharm 2025.3.2.1
 
 
 ## Blockers / Code Issues
@@ -269,9 +271,9 @@ No other issues were found, just those three.
 # Recommendations for Dev Team
 
 ## High-Priority Fixes
-1. Upgrading isn't an option
-2. Can still win the game without even catching anything
-3. No starting game menu
+1. Fixing the Green Button in the Power Grid Room
+2. Fixing the Text Box issues
+3. Fixing the logic so that you must complete ALL 4 puzzles before being able to fight the boss.
 
 ---
 
@@ -279,9 +281,6 @@ No other issues were found, just those three.
 
 **Testing Completed By:** 02/11/2026
 **Date Submitted:** 02/13/2026
-
-
-## QA Sign-Off
 
 **Testing Completed By:** 02/11/2026
 **Date Submitted:** 02/13/2026
