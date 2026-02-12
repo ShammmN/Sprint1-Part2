@@ -1,4 +1,4 @@
-Tuesday
+# Tuesday
 Date: _2/10/2026_
 
 ### Alex
@@ -26,7 +26,7 @@ Blockers?: Getting PyCharm & PyGame working
 Bugs filed today: 1 Issue Filed. Low Severity
 
  
-Wednesday
+# Wednesday
 Date: _2/11/2026_
 
 ### Alex
@@ -55,7 +55,7 @@ BlackJack: 3 Issues Filed, Severity Levels vary on Issues
 
 
 
-Thursday
+# Thursday
 Date: _02/12/26_
 
 ### Alex
