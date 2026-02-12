@@ -9,7 +9,7 @@ Date: 02/12/2026
 
 **Game Overview (From README)**
 **Short explanation of what the game is about:**
-- Fishing
+Fishing
 - Catch enough fish to survive the round
 - You cast enough line to try to catch enough fish to feed to the shark that is circling you. Each round you have a limited number of casts to catch enough fish to feed to the shark. You don't cast enough fish you die.
 
