@@ -80,8 +80,14 @@ Blockers? None
 
 
 Test Lead Notes: 
+- Everything went fine
+- Testing Plan.md got worked on a lot today
 
-Bugs filed today:
+
+Bugs filed today: 
+- 3 Issues for Echo of Terminal 7
+- 3 Issues for Christofer - Rise - Of Mark Ham
+
 
 Friday (Final)
 Date: ___________
