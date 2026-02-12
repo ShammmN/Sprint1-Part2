@@ -25,7 +25,7 @@ Blockers?: Getting PyCharm & PyGame working
 
 Bugs filed today: 1 Issue Filed. Low Severity
 
-## 
+ 
 Wednesday
 Date: _2/11/2026_
 
@@ -56,24 +56,29 @@ BlackJack: 3 Issues Filed, Severity Levels vary on Issues
 
 ##
 Thursday
-Date: 02/12/26
+Date: _02/12/26_
 
 Alex
 What I tested: Fish Game - Marcus C's Game
 What I'm testing next: Christofer-Rise-Of-Mark-Ham
 Blockers? None
+
 Sham
 What I tested: Fish Game - Marcus C's Game
 What I'm testing next: Christofer-Rise-Of-Mark-Ham
 Blockers? None
+
 Elizabeth
 What I tested: BlackJack
 What I'm testing next: Echo of Terminal 7
 Blockers? None
+
 Melo
 What I tested: BlackJack
 What I'm testing next: Echo of Terminal 7
 Blockers? None
+
+
 Test Lead Notes: 
 
 Bugs filed today:
