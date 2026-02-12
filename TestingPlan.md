@@ -24,7 +24,7 @@ Date: 02/12/2026
 **Player Inputs:** Click your mouse (only input)
 
 # Testing Strategy by Day
-**Monday:** Happy Path & Core Mechanics
+**Tuesday:** Happy Path & Core Mechanics
 
 **Goal:** Does the game work as the dev team said it would?
 
@@ -42,7 +42,7 @@ Date: 02/12/2026
 1. Entire UI missing, there was supposed to be a starting game page
 2. Cannot upgrade even though it was supposed to be an option
 
-**Tuesday:** Input Validation & Edge Cases
+**Wednesday:** Input Validation & Edge Cases
 Goal: What breaks the game? What unexpected inputs does it not handle?
 
 **Test Scenarios:**
@@ -64,8 +64,7 @@ Goal: What breaks the game? What unexpected inputs does it not handle?
 - [x] Look for off-by-one errors (1 too many, 1 too few)
 
 **Known issues found today:**
-1. [Issue 1]
-2. [Issue 2]
+1. Played 5 rounds without catching a fish and nothing happened
 
 **Wednesday:** Final Pass & Handoff
 
