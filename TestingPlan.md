@@ -421,6 +421,145 @@ No other issues were found, just those three.
 
 ---
 
+## Game Being Tested: CHRISTOFER: THE RISE OF MARK-HAM
+
+Dev Team: Gabe, Rahul, Huzaifah, and Troy
+
+QA Team: Sham, Elizabeth, Melo, Alex
+
+Date: 02/12/2026
+
+**Game Overview (From README)**
+-  Using your randomly generated character, Navigate through the Ruins of Be-Ta to stop Chris-tofer, the Script-King, from merging with the Dungeon Core. Battle enemies, collect items, and upgrade your stats as you descend through 30 floors of procedurally-generated rooms.
+
+
+**Short explanation of what the game is about:**
+- It is a walk through of a interactive story which is what makes it a text based game. The game walks you through a story where you go up against different enemies and get to choose by entering numbers that correspond with movement choices given.  It also has another interactive part where the code generates a line of different colored blocks and you have to press enter when it gets to green to win.  
+
+**Game Type**
+- Text game(some might say)
+- Interactive story
+
+**Core Mechanics:**
+- Mechanic 1: Playing the light game, in which you press enter whenever the light turns green.
+- Mechanic 2: Going through the interactive story.
+
+  
+**Win Condition:** Solve all the puzzles, fight the boss at the end.
+  
+**Lose Condition:** Lose against the boss at the end.
+
+**Player Inputs:** 
+- Press return or enter keys when the light is green, when told, or after entering a number. 
+- Press a number according to the options given to continue through the story
+
+# Testing Strategy by Day
+**Tuesday:** Happy Path & Core Mechanics
+
+**Goal:** Does the game work as the dev team said it would?
+
+*hint it doesn't*
+
+## Test Scenarios:
+
+- [x] Start the game cleanly (no crashes at launch)
+- [x] Follow the happy path (win the game normally)
+- [x] Follow the lose path (lose the game)
+- [x] Core mechanic 1 works as described
+- [x] All UI/output is readable and clear
+
+**Known issues found today:**
+1. Going into settings causes the text speed to be extremely slow
+
+**Wednesday:** Input Validation & Edge Cases
+Goal: What breaks the game? What unexpected inputs does it not handle?
+
+**Test Scenarios:**
+- [x] Try to break win/lose logic (can you get stuck?)
+- [x] State persistence (does the game track things correctly?)
+
+**Known issues found today:**
+1. The special features do not work, trying to use an item crashes the game.
+2. Can not use certain abilities
+    
+**Thursday:** Complex Scenarios & State Management
+
+**Goal:** Does the game handle weird sequences or complex game states?
+
+**Test Scenarios:**
+
+- [x] Test combinations: [specific sequence that might break things]
+- [x] Long gameplay (play for 10+ rounds without winning)
+- [x] Rapid state changes (quick back-and-forth actions)
+- [x] Look for off-by-one errors (1 too many, 1 too few)
+
+**Known issues found today:**
+1. The games text speed is extremely slow even if you enter a high number to make it fast.
+
+**Thursday:** Final Pass & Handoff
+
+**Goal:** Did we miss anything? Consolidate findings.
+
+Test Scenarios:
+
+- [x] Spot-check critical paths (game-breaking issues)
+- [x] Replay one more round of complex scenarios
+- [x] Verify all bugs are documented and reproducible
+- [x] Review severity/priority assignments
+- [x] Final summary and recommendations
+
+Known issues found today:
+1. The game works overall but is very unclear and its special features crash or do not work correctly.
+   
+# Bug Categories (Track What You Find)
+## By Severity
+- Critical: Game crashes or is unplayable
+- High: Core feature broken or incorrect
+- Medium: Feature partially works but has issues
+- Low: Cosmetic, minor, or edge case only
+
+## By Type
+- Input Validation: Game doesn't handle bad input
+- Logic Error: Game mechanics don't work as described
+- State Management: Game loses track of data (score, health, etc.)
+- UI/UX: Output is confusing or unclear
+- Performance: Game is slow or hangs
+---
+
+# Bug Summary Table
+
+| Day  | Bugs Found | Critical | High | Medium | Low | Total |
+|------|------------|----------|------|--------|-----|-------|
+| Tue  |     1       |          |          |    1    |          |      1    |
+| Wed  |      2      |      1   |          |     1   |          |     2     |
+| Thu  |       1      |          |     1      |    1    |          |    1       |
+| Fri  |             |          |           |        |          |           |
+| **Total** |     4  |      1   |      1    |  2     | 0        |    4      |
+
+
+# Additional QA Notes
+
+## Testing Environment
+**Environment Used:**  
+- You play it through virtual studio code and run the files and the game play is in the terminal
+
+
+## Blockers / Code Issues
+**Did the game run successfully?**  
+- The game ran and had some cool features such as the "graphics" like the text color, however there are some bugs and features that can crash the game.
+
+## Assumptions
+**Anything unclear about how the game should work?**  
+- Yes, the Readme overall is very unclear, at first we thought the game was a website. Then we started actually playing the game it wasn't clear which one is the main game because there are two games: one interactive story and the light game. When you play the games it is unclear that you have to pre
+
+# Recommendations for Dev Team
+
+## High-Priority Fixes
+1. Create a start menu or a better ReadMe, so there are clearer instructions on what the game is supposed to be.
+2. Fix the text speed settings.
+3. Fix the item feature so that it can be used without the game crashing.
+
+---
 ## QA Sign-Off
 
 **Testing Completed By:** 02/11/2026
