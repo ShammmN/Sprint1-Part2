@@ -58,22 +58,22 @@ BlackJack: 3 Issues Filed, Severity Levels vary on Issues
 Thursday
 Date: _02/12/26_
 
-Alex
+### Alex
 What I tested: Fish Game - Marcus C's Game
 What I'm testing next: Christofer-Rise-Of-Mark-Ham
 Blockers? None
 
-Sham
+### Sham
 What I tested: Fish Game - Marcus C's Game
 What I'm testing next: Christofer-Rise-Of-Mark-Ham
 Blockers? None
 
-Elizabeth
+### Elizabeth
 What I tested: BlackJack
 What I'm testing next: Echo of Terminal 7
 Blockers? None
 
-Melo
+### Melo
 What I tested: BlackJack
 What I'm testing next: Echo of Terminal 7
 Blockers? None
