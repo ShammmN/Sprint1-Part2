@@ -56,25 +56,25 @@ BlackJack: 3 Issues Filed, Severity Levels vary on Issues
 
 ##
 Thursday
-Date: ___________
+Date: 02/12/26
 
-[Person 1 Name]
-What I tested:
-What I'm testing next:
-Blockers?
-[Person 2 Name]
-What I tested:
-What I'm testing next:
-Blockers?
-[Person 3 Name]
-What I tested:
-What I'm testing next:
-Blockers?
-[Person 4 Name]
-What I tested:
-What I'm testing next:
-Blockers?
-Test Lead Notes:
+Alex
+What I tested: Fish Game - Marcus C's Game
+What I'm testing next: Christofer-Rise-Of-Mark-Ham
+Blockers? None
+Sham
+What I tested: Fish Game - Marcus C's Game
+What I'm testing next: Christofer-Rise-Of-Mark-Ham
+Blockers? None
+Elizabeth
+What I tested: BlackJack
+What I'm testing next: Echo of Terminal 7
+Blockers? None
+Melo
+What I tested: BlackJack
+What I'm testing next: Echo of Terminal 7
+Blockers? None
+Test Lead Notes: 
 
 Bugs filed today:
 
