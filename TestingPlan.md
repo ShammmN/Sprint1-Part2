@@ -52,7 +52,7 @@ Goal: What breaks the game? What unexpected inputs does it not handle?
 **Known issues found today:**
 1. Don't need to catch a fish in order to win the game and go to the next round
     
-**Tuesday:** Complex Scenarios & State Management
+**Wednesday:** Complex Scenarios & State Management
 
 **Goal:** Does the game handle weird sequences or complex game states?
 
