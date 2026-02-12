@@ -132,7 +132,7 @@ No other issues were found, just those three.
 ----------
 
 
-## Game Being Tested: Echo of Terminal 7 - Surrounded Edition
+# Game Being Tested: Echo of Terminal 7 - Surrounded Edition
 
 Dev Team: Nayan Patel, Khani Lyan, Gauhar Veeravalli, Quint Bunting
 
