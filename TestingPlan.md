@@ -246,12 +246,11 @@ No other issues were found, just those three.
 
 | Day  | Bugs Found | Critical | High | Medium | Low | Total |
 |------|------------|----------|------|--------|-----|-------|
-| Tue  |     1       |          |      1    |        |          |      1    |
-| Wed  |      2      |          |     2     |        |          |      2    |
-| Thu  |             |          |           |        |          |           |
-| Fri  |             |          |           |        |          |           |
-| **Total** |     3  |      0   |    3      |  0     | 0        |    3      |
-
+| Tue  |            |          |      |        |     |       |
+| Wed  |            |          |      |        |     |       |
+| Thu  |     3      |     2    |   1  |        |     |   3   |
+| Fri  |            |          |      |        |     |       |
+| **Total** |   3   |     2    |   1  |        |     |       |
 
 # Additional QA Notes
 
@@ -390,12 +389,11 @@ No other issues were found, just those three.
 
 | Day  | Bugs Found | Critical | High | Medium | Low | Total |
 |------|------------|----------|------|--------|-----|-------|
-| Tue  |     1       |          |      1    |        |          |      1    |
-| Wed  |      2      |          |     2     |        |          |      2    |
-| Thu  |             |          |           |        |          |           |
-| Fri  |             |          |           |        |          |           |
-| **Total** |     3  |      0   |    3      |  0     | 0        |    3      |
-
+| Tue  |            |          |      |        |     |       |
+| Wed  |     3      |    2     |      |    1   |     |       |
+| Thu  |            |          |      |        |     |       |
+| Fri  |            |          |      |        |     |       |
+| **Total** |   3   |    2     |      |    1   |     |       |
 
 # Additional QA Notes
 
