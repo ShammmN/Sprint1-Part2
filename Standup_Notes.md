@@ -89,7 +89,7 @@ Bugs filed today:
 - 3 Issues for Christofer - Rise - Of Mark Ham
 
 
-Friday (Final)
+# Friday (Final)
 Date: ___________
 
 Testing Status: Complete / In Progress / Incomplete
