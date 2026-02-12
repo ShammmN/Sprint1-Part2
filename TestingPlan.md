@@ -390,7 +390,7 @@ No other issues were found, just those three.
 | Day  | Bugs Found | Critical | High | Medium | Low | Total |
 |------|------------|----------|------|--------|-----|-------|
 | Tue  |            |          |      |        |     |       |
-| Wed  |     3      |    2     |      |    1   |     |       |
+| Wed  |     3      |    2     |      |    1   |     |   3   |
 | Thu  |            |          |      |        |     |       |
 | Fri  |            |          |      |        |     |       |
 | **Total** |   3   |    2     |      |    1   |     |       |
