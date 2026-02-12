@@ -1,3 +1,5 @@
+**Use Ctrl + F to find your game**
+
 # QA Testing Plan
 ## Game Being Tested: Fshng Game
 
