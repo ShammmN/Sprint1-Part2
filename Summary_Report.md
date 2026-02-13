@@ -543,5 +543,202 @@ The game has 3 documented issues** ranging from critical to cosmetic. With focus
 **Notes:**  [All boundary conditions handled correctly.]
 
 ---
+# **Game Tested:** CHRISTOFER: THE RISE OF MARK-HAM  
+**Dev Team:**  Gabe, Rahul, Huzaifah, and Troy
+**QA Team:** Sham, Alex, Melo, Elizabeth 
+**Testing Period:** Week 6 (Tue–Fri)  
+**Report Date:** 2/13/2026  
+
+---
+
+## Executive Summary
+
+We conducted comprehensive QA testing on **CHRISTOFER: THE RISE OF MARK-HAM** over 4 days. Our team tested **Minigame Playability, Readability, Game Logic**, ran **multiple trials, various attempts at breaking game logic, and had multiple successful and unsuccessful playthroughs**, and filed **4 Issues** documenting bugs across all severity levels.
+
+**Key Finding:**  
+The game runs fine and looks good however the special features such as the items, settings, and the text speed settings need fixing because they cause issues for the game and possibly crash it. All these issues are mainly with taking in user input.
+
+---
+
+## Testing Overview
+
+### What We Tested
+- Happy path (normal gameplay) ✓  
+- Input validation & edge cases ✓  
+- Win/lose conditions ✓  
+- State management ✓  
+- Complex scenarios & sequences ✓  
+
+---
+
+## Coverage Summary
+
+### Features Tested
+- **Power Grid Room Minigame:** 100% tested  
+- **Server Room Minigame:** 80% tested  
+- **Botany Room:** Not tested (straightfoward, worked perfectly fine in all playthroughs)  
+
+### Test Types
+- Functional testing (does it work?)  
+- Negative testing (what breaks it?)    
+- Exploratory testing (creative scenarios)  
+
+---
+
+## Bug Summary
+
+### By Severity
+- **Critical:** 2 bugs (game-breaking)  
+- **High:** 1 bugs (core features broken)  
+- **Medium:** 1 bugs (partial functionality issues)  
+- **Low:** 0 bugs (cosmetic or minor edge cases)  
+
+**Total Bugs Filed:** 4
+
+### By Category
+- **Input Validation:** 2 bugs  
+- **Logic Errors:** 1 bugs  
+- **State Management:** 0 bugs  
+- **UI/UX Issues:** 0 bugs  
+- **Other:** 1 bugs  
+
+---
+
+# Critical Issues (Must Fix Before Handoff)
+
+These bugs prevent the game from being playable or break core mechanics.
+
+| # | Title | Severity | Steps to Reproduce | GitHub Issue |
+|---|--------|----------|-------------------|--------------|
+| 1 | Item Feature crash| Critical | Play through the interactive game, use an item | [Link](https://github.com/ShammmN/Sprint1-Part2/issues/10) |
+| 2 | Press enter/random buttons loop| Critical | Run the game, press enter, press random buttons, observe as you enter loop | [Link](https://github.com/ShammmN/Sprint1-Part2/issues/11) |
+
+---
+
+# High-Priority Issues (Fix ASAP)
+
+These bugs affect core features but don't prevent gameplay.
+
+| # | Title | Severity | GitHub Issue |
+|---|--------|----------|--------------|
+| 1 | Cannot use certain abilities | High | [Link](https://github.com/ShammmN/Sprint1-Part2/issues/13 ) |
+---
+
+# Medium & Low Priority Issues
+
+Documented in GitHub Issues. These can be deferred or fixed in sequence.
+
+---
+
+## Testing Insights
+
+### What Worked Well
+- The story play through was nice.
+- The use of Java made it easy to test.
+- The story text colors were nice with good instructions on what to input to move through the story.
+
+### Areas for Improvement
+- The special features need to be fixed and made usable.
+- There are no error messages, for example the game crashes if you use an item.
+- Could use clearer instructions on how to play the game
+
+### Patterns Noticed
+- All the bugs we found were found in the interactive game part. There are bugs mainly with the user input for settings or using the special item feature. 
+
+---
+
+# Recommendations for Dev Team
+
+## Critical Fixes (Priority 1)
+- Fix text speed — entering settings causes the text speed to be very slow
+- Fix item usage — prevents you from upgrading and crashes the game
+
+## Important Fixes (Priority 2)
+- Improve input validation in the overall game because if you press enter then random letters you will enter a loop.
+- Fix state tracking in using random features that are supposed to be available but do not work.
+
+## Polish / Optional Fixes (Priority 3)
+- Could use ASCII to make it very cool and enhance the game
+- Could add a menu feature that gives clearer instructions or update the ReadMe
+
+---
+
+## Test Environment
+
+**Platform:** Virtual Studio Code terminal
+
+**Game Version:** 1.0, Feb 9, 2026
+
+**Testing Tools:** Manual testing + GitHub Issues  
+
+---
+
+## All GitHub Issues
+
+Complete list of filed bugs:  
+See dev team repo for all open GitHub Issues tagged `Sprint1-Part2`
+
+- **Total:** 4 issues  
+- **Closed:** 0 (if dev team fixed any during testing)  
+- **Open:** 4 (for dev team to fix in Week 7)  
+
+---
+
+## Conclusion
+
+We really enjoyed playing your game and appreciate it being in Java which made it easy to play. The game has 4 documented issues ranging from critical to medium. That we found while running tests focused on critical bugs and if the core gameplay loop is playable. Input validation and special features are what caused the biggest issues for the game overall. Although we were able to easily run the game, the color game and interactive story game are confusing to understand how they relate and what you are supposed to do. Also within the interactive game there are many issues mainly with taking input that could crash the game or send into a loop. Overall the game is cool and we really enjoyed the text colors and the interactive story was very creative and fun. The color game was also a fun challenge and the way it was set up with the colors was cool too. 
+
+
+The game has **4 documented issues** ranging from critical to cosmetic. With focused effort on critical bugs, the core gameplay loop is playable. Input validation and state management are the areas needing most attention.
+
+---
+
+# QA Team Sign-Off
+
+**Test Lead:** Sham  
+**Submitted:** 2/13/2026 
+
+**Team Members:**
+- Sham  
+- Melo 
+- Alex
+- Elizabeth
+
+---
+
+# Appendix: Detailed Test Scenarios
+
+### Scenario 1: [Happy Path]
+**Result:** [Failed]  
+**Notes:** The item feature that is supposed to help you upgrade does not work and crashes the game.
+
+### Scenario 2: [Input Validation]
+**Result:** [Failed]
+**Notes:**  Pressing enter then random keys will send the game into a loop therefore crashing it.
+
+### Scenario 3: [Edge Cases]
+**Result:**  [Partial]
+**Notes:**  The users ability to alter text/story speed does not work as intended.
+
+---
+
+# Questions for Dev Team (If Applicable)
+
+If there were ambiguities in how the game should work, note them here so dev team can clarify in Week 7:
+
+- What does the color game and the story have to do with each other? I think it would be really useful if y'all added some instructions or a better description because the interactive story and the other game don't necessarily correlate.
+
+---
+# QA Team Sign-Off
+
+**Test Lead:** Sham  
+**Submitted:** 2/13/2026 
+
+**Team Members:**
+- Sham  
+- Melo 
+- Alex
+- Elizabeth
+---
 
 **End of Report**
