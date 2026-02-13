@@ -1,3 +1,4 @@
+Use Ctrl + F to find your game
 # QA Summary Report
 
 **Game Tested:** Fshng Game  
