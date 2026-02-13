@@ -1,9 +1,13 @@
 # QA Summary Report
 
 **Game Tested:** Fshng Game
+
 **Dev Team:** Marcus C, Ayah, Bianca, Maddy
+
 **QA Team:** Elizabeth, Sham, Melo, Alex
+
 **Testing Period:** Week 6 (Tue–Fri)
+
 **Report Date:** 02/13/2026
 
 ---
