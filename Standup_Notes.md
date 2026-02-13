@@ -90,20 +90,18 @@ Bugs filed today:
 
 
 # Friday (Final)
-Date: ___________
+Date: 02/13/2026
 
-Testing Status: Complete / In Progress / Incomplete
+Testing Status: Complete
 
-Total Bugs Found: [Number]
+Total Bugs Found: 13
 
 Severity Breakdown:
 
-Critical: [#]
-High: [#]
-Medium: [#]
-Low: [#]
-Testing Summary: [What did we focus on? What did we find? Any patterns?]
+Critical: 5
+High: 3
+Medium: 2 
+Low: 2
+Testing Summary: A lot of the games just had their inentional errors.
 
-Handoff Complete: [Yes / No]
-
-Notes for Dev Team: [Anything they should know about testing or findings?]
+Handoff Complete: Yes
