@@ -1,19 +1,19 @@
 # QA Summary Report
 
-**Game Tested:** [Name]  
-**Dev Team:** [Team name/repo]  
-**QA Team:** [Your names]  
+**Game Tested:** Fshng Game  
+**Dev Team:** Marcus C, Ayah, Bianca, Maddy  
+**QA Team:** Elizabeth, Sham, Melo, Alex
 **Testing Period:** Week 6 (Tue–Fri)  
-**Report Date:** [Friday date]  
+**Report Date:** 02/13/2026 
 
 ---
 
 ## Executive Summary
 
-We conducted comprehensive QA testing on **[Game Name]** over 4 days. Our team tested **[X core features]**, ran **[Y test scenarios]**, and filed **[Z GitHub Issues]** documenting bugs across all severity levels.
+We conducted comprehensive QA testing on Fshng Game over 4 days. Our team tested the fishing mechanic, ran multiple test plays (around 38), and filed 3 GitHub issues documenting bugs across all severity levels.
 
 **Key Finding:**  
-[One sentence summary — e.g., *"The core game loop works, but input validation needs attention."*]
+Core game works, doesn't have upgrade system or anything of that such, and very plain UI.
 
 ---
 
@@ -21,7 +21,7 @@ We conducted comprehensive QA testing on **[Game Name]** over 4 days. Our team t
 
 ### What We Tested
 - Happy path (normal gameplay) ✓  
-- Input validation & edge cases ✓  
+- Input validation & edge cases ✓   
 - Win/lose conditions ✓  
 - State management ✓  
 - Complex scenarios & sequences ✓  
