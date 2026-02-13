@@ -531,10 +531,10 @@ Known issues found today:
 | Day  | Bugs Found | Critical | High | Medium | Low | Total |
 |------|------------|----------|------|--------|-----|-------|
 | Tue  |     1       |          |          |    1    |          |      1    |
-| Wed  |      2      |      1   |          |     1   |          |     2     |
-| Thu  |       1      |          |     1      |    1    |          |    1       |
+| Wed  |      2      |      2   |          |        |          |     2     |
+| Thu  |       1      |          |     1      |        |          |    1       |
 | Fri  |             |          |           |        |          |           |
-| **Total** |     4  |      1   |      1    |  2     | 0        |    4      |
+| **Total** |     4  |      2   |      1    |  1     | 0        |    4      |
 
 
 # Additional QA Notes
