@@ -1,197 +1,189 @@
-Use Ctrl + F to find your game
 # QA Summary Report
 
-**Game Tested:** Fshng Game  
-**Dev Team:** Marcus C, Ayah, Bianca, Maddy  
+**Game Tested:** Fshng Game
+**Dev Team:** Marcus C, Ayah, Bianca, Maddy
 **QA Team:** Elizabeth, Sham, Melo, Alex
-**Testing Period:** Week 6 (Tue–Fri)  
-**Report Date:** 02/13/2026 
+**Testing Period:** Week 6 (Tue–Fri)
+**Report Date:** 02/13/2026
 
 ---
 
 ## Executive Summary
 
-We conducted comprehensive QA testing on Fshng Game over 4 days. Our team tested the fishing mechanic, ran multiple test plays (around 38), and filed 3 GitHub issues documenting bugs across all severity levels.
+We conducted comprehensive QA testing on *Fshng Game* over 4 days. Our team tested the core fishing mechanic, executed approximately 38 playthroughs, and filed 3 GitHub issues documenting high-priority gameplay concerns.
 
-**Key Finding:**  
-Core game works, doesn't have upgrade system or anything of that such, and very plain UI.
+**Key Finding:**
+Core gameplay functions. However, the game doesn't have any structured progression, an upgrade system, and a proper win/lose system. The UI is very simple and missing essential navigation components (i.e. instructions on how to even play the game).
 
 ---
 
 ## Testing Overview
 
 ### What We Tested
-- Happy path (normal gameplay) ✓  
-- Input validation & edge cases ✓   
-- Win/lose conditions ✓  
-- State management ✓  
-- Complex scenarios & sequences ✓  
+
+- Happy path (normal gameplay) ✓
+- Input validation & edge cases ✓
+- Win/lose conditions ✓
 
 ---
 
 ## Coverage Summary
 
 ### Features Tested
-- **Feature 1:** 100% tested  
-- **Feature 2:** 80% tested  
-- **Feature 3:** Not tested (reason)  
 
-### Test Types
-- Functional testing (does it work?)  
-- Negative testing (what breaks it?)  
-- Boundary testing (edge values)  
-- Exploratory testing (creative scenarios)  
+- **Dragging mouse and catching fish:** 100% tested
+- **Upgrade feature:** 100% Tested (feature clearly does not work)
+
+### Test Types Performed
+
+- Functional testing (does it work as intended?)
+- Negative testing (what breaks it?)
+- Exploratory testing (creative and edge-case scenarios)
 
 ---
 
 ## Bug Summary
 
 ### By Severity
-- **Critical:** [#] bugs (game-breaking)  
-- **High:** [#] bugs (core features broken)  
-- **Medium:** [#] bugs (partial functionality issues)  
-- **Low:** [#] bugs (cosmetic or minor edge cases)  
 
-**Total Bugs Filed:** [#]
+- **Critical:** 0 bugs
+- **High:** 3 bugs
+- **Medium:** 0 bugs
+- **Low:** 0 bugs
+
+**Total Bugs Filed:** 3
 
 ### By Category
-- **Input Validation:** [#] bugs  
-- **Logic Errors:** [#] bugs  
-- **State Management:** [#] bugs  
-- **UI/UX Issues:** [#] bugs  
-- **Other:** [#] bugs  
+
+- **Input Validation:** 0 bugs
+- **Logic Errors:** 1 bug
+- **State Management:** 1 bug
+- **UI/UX Issues:** 1 bug
 
 ---
 
 # Critical Issues (Must Fix Before Handoff)
 
-These bugs prevent the game from being playable or break core mechanics.
-
-| # | Title | Severity | Steps to Reproduce | GitHub Issue |
-|---|--------|----------|-------------------|--------------|
-| 1 | [Title] | Critical | [Brief steps] | [Link] |
-| 2 | [Title] | Critical | [Brief steps] | [Link] |
+There were no critical issues that caused crashes or made the game break.
 
 ---
 
 # High-Priority Issues (Fix ASAP)
 
-These bugs affect core features but don't prevent gameplay.
+These issues significantly affect gameplay structure and progression.
 
-| # | Title | Severity | GitHub Issue |
-|---|--------|----------|--------------|
-| 1 | [Title] | High | [Link] |
-| 2 | [Title] | High | [Link] |
-| 3 | [Title] | High | [Link] |
-
----
-
-# Medium & Low Priority Issues
-
-Documented in GitHub Issues. These can be deferred or fixed in sequence.
+| # | Title                                          | Severity | GitHub Issue                                                       |
+| - | ---------------------------------------------- | -------- | ------------------------------------------------------------------ |
+| 1 | No menu system                                 | High     | [Link to issue](https://github.com/ShammmN/Sprint1-Part2/issues/3) |
+| 2 | No upgrade system                              | High     | [Link to issue](https://github.com/ShammmN/Sprint1-Part2/issues/1) |
+| 3 | Player cannot lose                             | High     | [Link to issue](https://github.com/ShammmN/Sprint1-Part2/issues/2) |
 
 ---
 
 ## Testing Insights
 
 ### What Worked Well
-- [Feature X performed as expected]  
-- [Code quality made testing easier]  
-- [Clear documentation helped understanding]  
+
+- Dragging mechanic functions
+- Game does not crash no matter how many rounds you play
+- Weight tracking works correctly across 38 rounds (most likely further)
+- Not a very easy game to break
 
 ### Areas for Improvement
-- [Input validation is weak]  
-- [State management has logic errors]  
-- [Error messages are unclear]  
 
-### Patterns Noticed
-- [Did bugs cluster in certain areas? Did specific input types break the game?]
+- README.md requires some more detail and better usage instructions
+- A starting menu would make the easier to use/understand
+- The game states that a fish must be caught to win, but you acutally don't have to
+- A proper game-over condition that should reset the players progress
+
+### Patterns Observed
+
+- Even when continually catching 0 fish across multiple rounds, the game progresses as if the player has won
+- Lack of win/lose enforcement reduces challenge and progression structure
 
 ---
 
 # Recommendations for Dev Team
 
-## Critical Fixes (Priority 1)
-- Fix [Issue X] — affects [feature]  
-- Fix [Issue Y] — prevents [win/lose condition]  
+## Priority 1 – Core Gameplay Fixes
 
-## Important Fixes (Priority 2)
-- Improve input validation in [feature]  
-- Fix state tracking in [feature]  
+- Implement a proper lose condition
+- Enforce win requirements before being able to go on to the next round
 
-## Polish / Optional Fixes (Priority 3)
-- [Cosmetic improvements]  
-- [Nice-to-have enhancements]  
+## Priority 2 – Feature Completion
+
+- Implement a functional upgrade system
+- Add a structured menu system to adjust any settings
+
+## Priority 3 – Polish & Enhancements
+
+- Add a start screen with instructions
+- Add background visuals
+- Introduce progression (deeper levels with rarer cooler fish)
+- Clean PNG assets to remove visible backgrounds
 
 ---
 
 ## Test Environment
 
-**Platform:** [Python terminal / Replit / Codespaces]  
-**Game Version:** [Commit hash or date]  
-**Testing Tools:** Manual testing + GitHub Issues  
+**Platform:** PyCharm using Pygame
+**Game Version:** Demo
+**Testing Method:** Manual testing + GitHub Issues
 
 ---
 
 ## All GitHub Issues
 
-Complete list of filed bugs:  
-See dev team repo for all open GitHub Issues tagged `qa-week6`
+Complete list of filed bugs:
+See development repository for all open issues tagged `qa-week6`.
 
-- **Total:** [#] issues  
-- **Closed:** [#] (if dev team fixed any during testing)  
-- **Open:** [#] (for dev team to fix in Week 7)  
+* **Total Issues Filed:** 3
+* **Closed:** 0
+* **Open:** 3
 
 ---
 
 ## Conclusion
 
-[Summary of testing effort and findings. One paragraph.]
-
-The game has **[#] documented issues** ranging from critical to cosmetic. With focused effort on critical bugs, the core gameplay loop is playable. Input validation and state management are the areas needing most attention.
+The game has **3 high-priority** issues that affect the quauilty of the game play. While the core fishing mechanic is works, there is still no win/lose conditions, no menu system, and no working upgrade feature. Addressing these issues will greatly improve game structure and make it feel overall very polished.
 
 ---
 
 # QA Team Sign-Off
 
-**Test Lead:** [Name]  
-**Submitted:** [Date/Time]  
+**Test Leads:** Alex Kurcan, Sham Nemer
+**Submitted:** 02/13/2026
 
 **Team Members:**
-- [Name]  
-- [Name]  
-- [Name]  
-- [Name]  
+
+* Elizabeth
+* Melo
+* Sham
+* Alex
 
 ---
 
 # Appendix: Detailed Test Scenarios
 
-### Scenario 1: [Happy Path]
-**Result:** [Passed / Failed / Partial]  
-**Notes:** [What did we learn?]
+### Scenario 1
 
-### Scenario 2: [Input Validation]
-**Result:** [Passed / Failed / Partial]  
-**Notes:**  
-
-### Scenario 3: [Edge Cases]
-**Result:** [Passed / Failed / Partial]  
-**Notes:**  
+**Description:** Played 5 rounds without catching a fish
+**Status:** Failed
+**Expected Result:** Game over message displayed
+**Actual Result:** Game continued as if we had won
 
 ---
 
-# Questions for Dev Team (If Applicable)
+### Scenario 2
 
-If there were ambiguities in how the game should work, note them here so dev team can clarify in Week 7:
-
-- [Question about mechanic X]  
-- [Unclear behavior in feature Y]  
+**Description:** Attempted to access rod upgrade feature
+**Status:** Failed
+**Expected Result:** Upgrade menu or mechanic available
+**Actual Result:** No upgrade functionality present
 
 ---
 
 **End of Report**
-
 
 -----------------------------------------
 # **Game Tested:** Echo Of Terminal 7 - Surrounded Edition  
