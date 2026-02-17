@@ -1,11 +1,14 @@
 # QA Fix Verification Report
 
-**Game Tested:** 
-- TickleThePickle  
+**Game Tested:**
+- TickleThePickle
+  
 **Dev Team:**
 - Elizabeth, Melo, Alex, Sham
+
 **QA Team:**
 - Khani, Nayan, Gauhar, Quint
+
 **Date:**
 - 02/17/2026
 
@@ -195,7 +198,7 @@ Did fixing bugs introduce new bugs?
 - One recommendation for the Dev team is to keep the PNG images and not use images with a clear background because that does not work well. Also do pretests for small things like if a user decided not to play the game at all, to make sure you take all possible issues into account. 
 
 **Testing Approach Used:**  
-We did each issue one by one. First we read the issue, then tested it to see how exactly it works. After we made sure we understood the issue then we fixed it and ran another test to make sure the game runs as intended with the updated coded. When we test is when we can see if there is a new problem formed or not and then we went throught again fixing the code and testing it.
+- We did each issue one by one. First we read the issue, then tested it to see how exactly it works. After we made sure we understood the issue then we fixed it and ran another test to make sure the game runs as intended with the updated coded. When we test is when we can see if there is a new problem formed or not and then we went throught again fixing the code and testing it.
 
 ---
 
