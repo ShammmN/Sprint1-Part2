@@ -1,18 +1,22 @@
 # QA Fix Verification Report
 
-**Game Tested:** TickleThePickle  
-**Dev Team:**  Elizabeth, Melo, Alex, Sham
-**QA Team:** Khani, Nayan, Gauhar, Quint
-**Date:**   02/17/2026
+**Game Tested:** 
+- TickleThePickle  
+**Dev Team:**
+- Elizabeth, Melo, Alex, Sham
+**QA Team:**
+- Khani, Nayan, Gauhar, Quint
+**Date:**
+- 02/17/2026
 
 ---
 
 ## Summary
 
 - **Total Bugs from Week 6:** 7  
-- **Bugs Verified as Fixed:** [#]  
-- **Bugs Still Present:** [#]  
-- **Regressions Found:** [#]  
+- **Bugs Verified as Fixed:** 7  
+- **Bugs Still Present:** 0  
+- **Regressions Found:** 2  
 
 ---
 
@@ -188,10 +192,10 @@ Did fixing bugs introduce new bugs?
 - The game is now very improved and has a lot of cool new features. It takes into account a lot of issues that a user could face that were not thought of before. The graphics are now much nicer and higher quality. We also added more quality features that help the user navigate the game so it is easier to understand. 
 
 **Recommendation for Dev Team:**  
-- One recommendation for the Dev team is to keep the PNG images and not use images with a clear background because that does not work well. 
+- One recommendation for the Dev team is to keep the PNG images and not use images with a clear background because that does not work well. Also do pretests for small things like if a user decided not to play the game at all, to make sure you take all possible issues into account. 
 
 **Testing Approach Used:**  
-[Did you re-run all your Week 6 scenarios? Play through new areas? Regression test? etc.]
+We did each issue one by one. First we read the issue, then tested it to see how exactly it works. After we made sure we understood the issue then we fixed it and ran another test to make sure the game runs as intended with the updated coded. When we test is when we can see if there is a new problem formed or not and then we went throught again fixing the code and testing it.
 
 ---
 
