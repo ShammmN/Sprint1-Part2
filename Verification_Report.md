@@ -182,6 +182,7 @@ What the Dev Team Should Prioritize if Given More Time: General polish and addit
 Testing Approach Used: We re-ran the exact reproduction steps from each Week 6 bug report to confirm the fixes. We also played through several full sessions to verify that normal gameplay felt correct. Bug 3 received additional attention since it was originally intermittent, so we repeated that test more times than the others to ensure confidence in the fix.
 
 
+
 Sign-Off
 QA Team:
  Sham
@@ -189,3 +190,89 @@ QA Team:
  Melo
  Elizabeth
 Verification Completed: 02/18/2026
+
+BlackJack QA Fix Verification Report
+
+**Game Tested:** BlackJack
+**Dev Team:** Samuel, Jessica, Karan, Maxwell
+**QA Team:** Sham, Alex, Elizabeth, Melo
+**Date:** 2/18/2026
+
+---
+
+## Quick Summary
+
+| | |
+|---|---|
+| Total Bugs from Week 6 | 3 |
+| Bugs Verified as Fixed | 3 |
+| Bugs Still Present | 0 |
+| Regressions Found | 0 |
+
+---
+
+## Bug Verification
+
+### Bug 1
+
+**Original Issue:** Game crashes in Russian BlackJack mode after clicking Hit
+
+**Severity:** Critical
+
+**Status:** [x] Fixed
+
+**Verification Notes:** We launched the game, enabled Russian Mode from the menu, clicked Deal, then clicked Hit. In Week 6, the game froze and crashed at this point. After the fix, clicking Hit in Russian Mode no longer causes a freeze or crash. The game now correctly ignores the Hit action in Russian Mode since it is not a valid move in that mode. The round continues as expected.
+
+---
+
+### Bug 2
+
+**Original Issue:** Extra card upgrade ignores the 21-point bust rule on deal
+
+**Severity:** Critical
+
+**Status:** [x] Fixed
+
+**Verification Notes:** We played until earning an upgrade point, upgraded Extra Cards, then clicked Deal multiple times across several rounds. In Week 6, the player could start with 3 cards totaling over 21 and still win by clicking Stand. After the fix, the upgrade no longer deals a third card directly. Instead it re-rolls the starting hand up to the number of attempts unlocked and picks the best result under 21. We never started a round with a bust, and the bust logic on Hit and Stand worked normally throughout testing.
+
+---
+
+### Bug 3
+
+**Original Issue:** Upgrade buttons are unclickable at times even when upgrade points are available
+
+**Severity:** Medium
+
+**Status:** [x] Fixed
+
+**Verification Notes:** We won multiple blackjack rounds to earn upgrade points, then clicked the upgrade buttons (Extra Cards, Dealer Nerves, Bonus Payout) across around 10 separate attempts. In Week 6 the buttons would sometimes do nothing and the counter would not update. After the fix, the buttons responded correctly every time. The counter updated as expected (e.g. 0/2 to 1/2) and points were deducted properly. We did not run into the intermittent issue once during this round of testing.
+
+---
+
+## Regressions
+
+Did fixing the bugs above introduce any new bugs?
+
+No regressions were found. All three fixes were tested thoroughly and no new issues came up during verification.
+
+---
+
+## Overall Assessment
+
+**Game state after fixes:** The game is in a solid state. All three bugs from Week 6 have been resolved. Russian Mode no longer crashes, the card upgrade system works as intended without allowing a bust on deal, and the upgrade buttons are responsive. The game is fully playable from start to finish.
+
+**What the dev team should prioritize if they had more time:** General polish and edge case testing around the Russian Roulette mode since it has more complex state handling than the rest of the game. Worth making sure the multiplier streaks and payout logic hold up under extended play.
+
+**Testing approach:** We re-ran the exact reproduction steps from each Week 6 bug report to confirm the fixes. We also played through several full sessions to make sure nothing felt off in normal gameplay. Bug 3 got extra attention since it was intermittent originally, so we repeated that test more times than the others to be confident.
+
+---
+
+## Sign-Off
+
+**QA Team:**
+- Sham
+- Alex
+- Elizabeth
+- Melo
+
+**Verification completed:** 2/18/2026
