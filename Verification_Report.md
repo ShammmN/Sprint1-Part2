@@ -1,25 +1,25 @@
 # QA Fix Verification Report
 
 **Game Tested:**
-- TickleThePickle
+- CHRISTOFER: THE RISE OF MARK-HAM
   
 **Dev Team:**
-- Elizabeth, Melo, Alex, Sham
+- Gabe, Rahul, Huzaifah, and Troy
 
 **QA Team:**
-- Khani, Nayan, Gauhar, Quint
+- Elizabeth, Melo, Alex, Sham
 
 **Date:**
-- 02/17/2026
+- 02/18/2026
 
 ---
 
 ## Summary
 
-- **Total Bugs from Week 6:** 7  
-- **Bugs Verified as Fixed:** 7  
-- **Bugs Still Present:** 0  
-- **Regressions Found:** 2  
+- **Total Bugs from Week 6:**  4
+- **Bugs Verified as Fixed:** 2  
+- **Bugs Still Present:** 2  
+- **Regressions Found:** 0  
 
 ---
 
@@ -32,55 +32,55 @@ For each bug reported in Week 6, document whether the fix worked.
 ### Bug #1
 
 **Original Issue:**  
-- The upgrade Key "p" can not increase damage/allow you to shoot multiple projectiles. 
+- Cannot use items within a fight.
 
 **Severity:**  
-- High 
+- Critical
 
 **Status:** 
-- Fixed 
+- partially fixed
 
 **Verification Notes:**  
-- This bug was fixed and now you can upgrade once per wave for 150 points by pressing 'P'.
+- The game keeps making you do basically the same things, like you are entering in a loop. However I think it is part of the game, it just needs a message to tell the user that they do not have that item or if they did use that item or not. It is not clear.
 
 ---
 
 ### Bug #2
 
 **Original Issue:**  
-- There is no screen displaying that you can not upgrade with the incorrect amount of points
+- Hit enter, press random buttons and will enter a loop.
 
 **Severity:**  
-- High  
+- Critical  
 
 **Status:** 
 - Fixed 
 
 **Verification Notes:**  
-- Added a pop up message that lets the user know they can not upgrade due to insuffienct points or if they already got their upgrade that round.
+- Added a message that lets the user know their input is invalid and does not go into a loop/crash.
 
 ---
 
 ### Bug #3
 
 **Original Issue:**  
-- The game does not end when the pickles get to the bottom of the screen
+- Changing the text speed in setting by setting it to a higher number make the text slow.
 
 **Severity:**  
-- High 
+- Medium
 
 **Status:** 
-- Fixed 
+- Not fixed  
 
 **Verification Notes:**  
-- Added a line/border to end the game when the Pickle Soldiers reach it.
+- The text speed still becomes slower when you set it to a higher number like 200. This setting could use more detail on how it works like a scale of what are allowed inputs and what they do. 
 
 ---
 
 ### Bug #4
 
 **Original Issue:**  
-- The Pickle Soldiers do not hurt you when they collide with the player.
+- Cannot use certain abilities that are an available option
 
 **Severity:**  
 - High 
@@ -89,55 +89,7 @@ For each bug reported in Week 6, document whether the fix worked.
 - Fixed 
 
 **Verification Notes:**  
-- Added a line/border to end the game when the Pickle Soldiers reach it which stops the soldiers from touching the player.
-
----
-
-### Bug #5
-
-**Original Issue:**  
-- Pressing the 'Q' key to quit does not work
-
-**Severity:**  
-- Medium
-
-**Status:** 
-- Fixed 
-
-**Verification Notes:**  
-- Added code so that when the user presses the 'Q' key it asks for verification to quit and resets them back to the start screen.
-
----
-
-### Bug #6
-
-**Original Issue:**  
-- The Pickle Soldiers and Vampire images are not fully transparent even as a clipart image
-
-**Severity:**  
-- Low
-
-**Status:** 
-- Fixed 
-
-**Verification Notes:**  
-- The images are now fixed and do not have a white background by swapping the images out for better ones.  
-
----
-
-### Bug #7
-
-**Original Issue:**  
-- Ending screen after boss fight is not visible with the natural browser zoom of the game 
-
-**Severity:**  
-- Medium
-
-**Status:** 
-- Fixed 
-
-**Verification Notes:**  
-- Added a won verification and a lost verification screen after the end of the boss fight. 
+- The game gives the user a pop up message letting them know they do not have access/own that item yet. 
 
 ---
 
@@ -152,53 +104,34 @@ Did fixing bugs introduce new bugs?
 ### Regression #1
 
 **What Happened:**  
-- Tried to combine pieces of code and ended up breaking the boarder for the Pickle Soilders movement.
+- Tried to test the items feature but the game does not let you use the item and puts you in almost like a loop of the same events and not really progressing.
 
 **When It Occurs (Steps to Reproduce):**  
 1. Open the game  
-2. Play but dont shoot
-3. Observe as the Pickle Soldiers move off the screen
+2. Enter 1 to play and play through
+3. Try to use an item
+4. Observe as the game does not do anything with the item and it asks the same questions over again
 
 **Severity:** 
-- Critical 
+- Medium 
 
 **Related to Fix:**  
-- Trying to fix the clipart images bug.
+- Trying to test the item game feature that previously had issues. 
 
 ---
-
-### Regression #2
-
-**What Happened:**  
-- After you press 'Q' to quit and restart, it speeds up then if you press 'Q' to quit again and restart it again, it speeds up so much it crashes. 
-
-**When It Occurs (Steps to Reproduce):**  
-1. Open the game  
-2. Play but then press 'Q' to quit 
-3. Restart the game and play
-4. Observe as the all the game movements speed up
-5. Press 'Q' to quit
-6. Restart the game and play again
-7. Observe as the game speeds up much faster and crashes
-
-**Severity:** 
-- Critical 
-
-**Related to Fix:**  
-- Trying to fix the press 'Q' key to quit option. 
 
 ---
 
 ## Overall Assessment
 
 **Game Status After Fixes:**  
-- The game is now very improved and has a lot of cool new features. It takes into account a lot of issues that a user could face that were not thought of before. The graphics are now much nicer and higher quality. We also added more quality features that help the user navigate the game so it is easier to understand. 
+- The game looks good and the graphics are very cool. The game now has more user input handling like handling invalid user input. Although there are still a couple issues that need to be fixed, the game overall is very well done and creative. The color clicker part now ties in to the interactive story game too and it is very cool. 
 
 **Recommendation for Dev Team:**  
-- One recommendation for the Dev team is to keep the PNG images and not use images with a clear background because that does not work well. Also do pretests for small things like if a user decided not to play the game at all, to make sure you take all possible issues into account. 
+- One recommendation for the Dev team is to add more information on the features because it can be hard to understand what they do and/or how to use them. 
 
 **Testing Approach Used:**  
-- We did each issue one by one. First we read the issue, then tested it to see how exactly it works. After we made sure we understood the issue then we fixed it and ran another test to make sure the game runs as intended with the updated coded. When we test is when we can see if there is a new problem formed or not and then we went throught again fixing the code and testing it.
+- We did each issue one by one. First we read the issue to see what exactly we were looking for, then we read how to recreate it and did observing to see if we can find the error. We took notes on what happened when we recreated the previous errors, seeing if the errors were fixed and if any new issues arose. 
 
 ---
 
@@ -211,4 +144,4 @@ Did fixing bugs introduce new bugs?
 - Melo  
 - Elizabeth 
 
-**Verification Completed:** [Date/Time]
+**Verification Completed:** 02/18/2026 
