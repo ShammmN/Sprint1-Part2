@@ -19,7 +19,7 @@
 - **Total Bugs from Week 6:**  4
 - **Bugs Verified as Fixed:** 2  
 - **Bugs Still Present:** 2  
-- **Regressions Found:** 0  
+- **Regressions Found:** 1  
 
 ---
 
